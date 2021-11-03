@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+
+html{
+    background-image: url("Pattern for Splash.jpg");
+    background-size: auto;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background-color: rebeccapurple;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+
+.dropdown{
+    height: 90px;
+    width: 90px;
+    top: 0;
+    left: 0;
+    background-image: url("Burger3.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+    z-index: 99;
+}
+
+
+
+.menu{
+    position: fixed;
+    top: 90px;
+    left: -600px;
+    width: 120px;
+    height: 250px;
+    background-color: red;
+    transition: 3s;
+    z-index: 97;
+}
+
+a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: -10px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.containers{
+    width: 200px;
+    height: 200px;
+    margin-left: 120px;
+    background-image: url("Hamburger.png");
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px){
+    div.menu{
+        display: none;
+    }
+}
+
